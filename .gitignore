@@ -1,0 +1,56 @@
+# Stable Diffusion 1.5 模型文件 (~4GB) — 从 ModelScope 下载
+sd/
+
+# 训练好的模型权重（过大，不纳入版本控制）
+models/classifier.pth
+models/lora/*.safetensors
+models/lora/*.pt
+# 保留训练配置 JSON 和 embeddings（体积小、有参考价值）
+!models/lora/*_training_config.json
+!models/embeddings/
+
+# 数据集
+dataset/
+
+# 输出文件（生成的图片、日志、图表）
+outputs/
+
+# Python 虚拟环境
+venv/
+env/
+.venv/
+
+# Conda 环境
+*.conda/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 环境变量
+.env
+.env.local
+
+# 缓存目录
+cache/
+
+# Gradio
+.gradio/
